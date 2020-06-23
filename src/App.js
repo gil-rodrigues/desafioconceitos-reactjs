@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import "./styles.css";
 
 function App() {
+  const { repositories, setRepository } = useState([]);
+
   async function handleAddRepository() {
     // TODO
   }
@@ -15,7 +17,7 @@ function App() {
     <div>
       <ul data-testid="repository-list">
         <li>
-          Repositório 1
+          {}
 
           <button onClick={() => handleRemoveRepository(1)}>
             Remover
